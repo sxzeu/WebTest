@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <meta charset="utf-8"></meta>
+        <title>처음 만나는 채식</title>
+        <link rel="stylesheet" href="myprojectcss.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
+    <body>
+      <div id="first_page" onclick="js:FirstToSecond()">
+           <p style="padding-top: 400px;">
+               동물권을 위해서, 환경을 위해서, 건강을 위해서, 체중 감량을 위해서 등의 이유로 현재 채식은 많은 사람들의 주목을 받고 있습니다. </br>
+            채식은 어떤 것 일까요? 그리고 어떻게 실천할 수 있을까요? 
+           </p>
+      </div>
+
+
+        <div id="second_page">
+            <p style="padding-top: 100px;"> 채식이란 단순히 육류를 먹지 않는 것이 아닙니다. 우리가 아는 것 보다 채식주의를 실천하는 방법은 다양합니다. </br>
+                자신의 건강상태에 따라, 가치관에 따라 그리고 채식을 시작하는 이유에 따라서 어떤 채식주의를 실천 할 지 결정 할 수 있습니다. </p>
+            <div id="second_video" style="float:left;">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XCK6Iq0EmFg?start=3"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div id="second_text" style="float:right;">
+                <p> 영상에서 확인할 수 있듯 먹을 수 있도록 선택한 음식의 종류에 따라 채식주의의 종류가 나뉩니다.</p>
+                </br>
+                <li>비건은 오직 채식만 먹는 것을 말합니다.</li>
+                <li>락토는 채식과 우유, 유제품을 먹는 것을 말합니다. </li>
+                <li>오보는 채식과 달걀을 먹는 것을 말합니다.</li>
+                <li>락토오보는 채식과 우유,유제품,달걀과 같은 난류를 먹는 것을 말합니다.</li>
+                </br>
+                <p>당신이 시도해 보기 좋은 채식의 방식은 무엇일까요?<p>
+                    <button type="button" class="btn btn-outline-secondary" style="margin-top:5%;" onclick="js:SecondToTest()">테스트하러 가기</button>
+            </div>
+        </div>
+
+        <div id="test_start_page" class="test_page" style="padding-top: 100px;">
+            <p> 여러분이 시도하면 좋을 채식의 방식을 추천해드릴게요! 채식에 대한 평소 관심도, 실천의지에 대한 질문에 간단히 답변해주세요.</p>
+            <button type="button" class="btn btn-outline-secondary" style="margin-top:5%; margin-bottom:35.5%;"  onclick="js:TestToQ1()">답변시작하기</button>
+
+        </div>
+
+        <div id="test_q1"  class="test_page" style="padding-top: 100px;">
+            <p> 당신은 평소 비건, 채식주의의 실천에 대한 관심이 있었나요?</p>
+            <button type="button" class="btn btn-outline-secondary" style="margin-top:5%; " onclick="js:Q1ToQ2_1()">평소 관심이 있었다. 어떻게 실천하는게 좋을지 더 알고싶다.</button>
+            <button type="button" class="btn btn-outline-secondary" style="margin-top:5%;" onclick="js:Q1ToQ2_2()">평소 관심이 없었다. 이번 기회에 처음 정보를 접했다.</button>
+
+        </div>
+
+        <div id="test_q2_1" class="test_page" style="padding-top: 100px;">
+            <p> 당신은 이전에 비건, 채식주의를 실천해 본 적 있나요?</p>
+            <button type="button" class="btn btn-outline-secondary" style="margin-top:5%;" onclick="js:Q2_1ToType_a()">실천해 본 적 있으며, 앞으로도 실천할 의향이 있다.</button>
+            <button type="button" class="btn btn-outline-secondary" style="margin-top:5%;" onclick="js:Q2_1ToType_b()">관심은 있었으나, 실천해 본 적은 없다.</button>
+
+        </div>
+
+        <div id="test_q2_2"  class="test_page" style="padding-top: 100px;">
+            <p> 당신은 비건, 채식주의를 실천해야 한다면, 일주일에 한 번은 실천할 의향이 있나요?</p>
+            <button type="button" class="btn btn-outline-secondary" style="margin-top:5%;" onclick="js:Q2_2ToType_c()">일주일에 한 번 정도는 실천해 볼 수 있을 것 같다.</button>
+            <button type="button" class="btn btn-outline-secondary" style="margin-top:5%;" onclick="js:Q2_2ToType_d()">실천 의향이 크게 있지 않아 실천하기 어려울 것 같다.</button>
+
+        </div>
+
+        <div id="type_a" class="result" style="padding-top: 75px;">
+            <h3 style="padding-bottom: 30px;">채식에 관심이 많고 실천해 본 적까지 있는 당신!  당신에게 추천하는 채식은 비건입니다.</h3>
+            <p>비건은 모든 육류와 어류, 난류, 유제품을 먹지 않는 채식주의 입니다. </br>
+                버섯과 해조류, 채소와 과일을 먹을 수 있습니다. </br>
+               비건은 가장 먹지 않는 것이 많으므로 신경써야 할 것은 많지만, 일주일에 한 번 정도 실천해 보는 것은 괜찮지 않을까요?
+               채식에 관심이 많은 당신께 한 번쯤 시도해 보는 것을 추천합니다.
+            </p>
+            <h4 style="margin-top: 30px; margin-bottom: 30px;">당신에게 추천하는 시도해보기 좋을 비건 레시피</h4>
+
+            <div class="result_1">
+                첫 번째로 추천해 드릴 비건레시피는 가지갈비덮밥입니다.</br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kMAhwjIrf1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </br>간단히 해먹기 좋은 레시피이며, 냉장고에 있는 재료들로 간단히 만들기 좋은 덮밥요리입니다.</br>
+            </div>
+
+            <div class="result_2">
+                두 번째로 추천해 드릴 비건레시피는 두부강정입니다. 닭강정 대신 두부강정 어떠세요? </br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3NuKvFlOQ_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </br>닭강정처럼 두부를 튀긴 후 소스를 입혀 간식으로 먹기 좋은 요리입니다. 
+            </div>
+        </div>
+
+        <div id="type_b" class="result" style="padding-top: 75px;">
+            <h3 style="padding-bottom: 30px;">채식에 관심이 많지만 실천은 해보지 못한 당신! 당신에게 추천하는 채식은 바로 오보입니다.</h3>
+            <p>오보는 육류와 어류, 유제품을 먹지 않는 채식주의 입니다. 버섯과 해조류, 채소, 과일, 그리고 계란과 같은 난류를 먹을 수 있습니다.</br>
+                오보는 비건 다음으로 먹지 않는 것이 많습니다. 하지만 버섯과 채소와 동물의 알로만으로도 충분히 맛있는 식사를 할 수 있을 것 같습니다.  </br>
+                오보는 채식에 관심이 많은 당신이 부담스럽지 않게 시도해 보기 좋다고 생각합니다. 
+            </p>   
+            <h4 style="margin-top: 30px; margin-bottom: 30px;">당신에게 추천하는 시도해보기 좋을 오보 레시피</h4>
+                
+            <div class="result_1">
+                첫 번째로 추천해 드릴 오보 레시피는 바로 뼈없는 감자탕입니다.</br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-C98NGVTwHU" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </br>육식 재료는 없는 감자탕레시피로, 채식 재료만으로도 충분히 맛있게 먹을 수 있는 감자탕을 만들어 먹어보는 한끼 어떠세요?</br>
+            </div>
+            <div class="result_2">
+                두 번째로 추천해 드릴 오보 레시피는 흑임자 찰떡 쿠키입니다.</br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kt8aapr-Kpo" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </br> 베이킹에 핵심재료인 우유와 버터가 없어도 만들 수 있는 레시피로, 오보를 시도해보는 당신께 추천합니다. </br>
+            </div>
+        </div>
+
+        <div id="type_c" class="result" style="padding-top: 75px;">
+            <h3 style="padding-bottom: 30px;">채식을 처음 접하지만 일주일에 한 번정도는 해볼 수 있을 것 같은 당신! 당신에게 추천 하는 채식은 락토입니다.</h3>
+            <p>락토는 육류와 어류, 난류를 먹지 않는 채식주의 입니다. 버섯과 해조류, 채소, 과일, 유제품을 먹을 수 있습니다.</br>
+                락토는 유제품을 먹을 수 있으므로 오보와 비건보다 더 다채로운 레시피를 즐길 수 있습니다.  </br>
+                이런 오보는 채식을 처음 접하나
+                일주일에 하루쯤은 실천 할 수 있을 것만 같은 당신께 적합하다고 생각합니다.
+            </p>
+            <h4 style="margin-top: 30px; margin-bottom: 30px;">당신에게 추천하는 시도해보기 좋을 락토 레시피</h4>
+            <div class="result_1">
+                첫 번째로 추천해 드릴 락토 레시피는 바로 그릭요거트입니다.</br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TLlSWzY3Bfo" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </br> 최근 유행하고 있는 그릭요거트는 유제품을 먹을 수 있는 락토를 시도하며 먹을 수 있는 좋은 음식이라 생각합니다. </br>
+            </div>
+            <div class="result_2">
+                두 번째로 추천해 드릴 락토 레시피는 브로콜리 스프입니다.</br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F6Lms960eHw" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </br> 버터와 생크림, 우유, 파마산 치즈를 사용하는 락토 레시피로 한번쯤 먹어보기 좋을 레시피라고 생각합니다.</br>
+            </div>
+        </div>
+
+        <div id="type_d" class="result" style="padding-top: 75px;">
+            <h3 style="padding-bottom: 30px;">채식을 처음 접하고 시도하기에 어렵다고 생각하는 당신! 당신에게 추천하는 채식은 락토오보입니다.</h3>
+            <p>락토오보는 육류와 어류를 먹지 않는 채식주의입니다. 버섯과 해조류, 채소, 과일, 유제품, 그리고 계란과 같은 난류를 먹을 수 있습니다.</br>
+                말 그대로 고기만 먹지 않는 채식주의이므로 가장 실천하기 쉽습니다.  </br>
+                채식을 처음 접해 어렵게 느껴지는 당신!
+                일주일에 하루는 고기먹지 않는 날을 실천해보는 건 어떨까요? 
+            </p>
+            <h4 style="margin-top: 30px; margin-bottom: 30px;">당신에게 추천하는 시도해보기 좋을 락토오보 레시피</h4>
+            <div class="result_1">
+                첫 번째로 추천해 드릴 락토오보 레시피는 바로 햄버거입니다.</br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LrPnzs0n6pI" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </br> 고기가 들어가지 않은 락토오보 햄버거입니다.  </br> 고기를 넣지않고도 충분히 맛있는 햄버거를 먹을 수 있는 레시피입니다.</br>
+            </div>
+            <div class="result_2">
+                두 번째로 추천해 드릴 락토오보 레시피는 비건 투움바 파스타입니다. </br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/L1tphr4VkOE" title="YouTube video player" frameborder="0"
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </br> 채식을 시도할 엄두가 나지않는 당신에게 채식보다 맛있는 요리로 느껴지는 레시피를 소개합니다.</br>
+            </div></div>
+        </div>
+        <script src="myprojectjs.js" charset="utf-8"></script>
+    </body>
+</html>
